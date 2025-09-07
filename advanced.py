@@ -51,6 +51,7 @@ patterns = [
     (r"(?:explain|tell me about|what is|who is) (.*)", lambda match: getWiki(match.group(1))),
     (r"tell me a joke|tell me something funny|joke", lambda match: "joke: " + getJoke()),
     (r"tell me a fact|fun fact|fact", lambda match: "fact: " + getFact()),
+    (r"help|what can you do|help me", lambda match: "I can provide information from Wikipedia, tell jokes, share facts, and give weather updates. Try asking me something!"),
 ]
 
 def advanced():
